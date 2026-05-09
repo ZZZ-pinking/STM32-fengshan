@@ -2,7 +2,7 @@
 #include "Variable.h"
 #include "PWM.h"
 
-/*注意LED的GPIO与PWM配置已经在PWM.c中配置好了，这个函数是在中断中执行的函数*/
+/*LED的GPIO与PWM配置已经在PWM.c中配置好了，这个函数是在中断中执行的函数*/
 void LED_Breathing(void)
 {
 		if(AllLed==1 && BreatheLed==0)//如果灯光开启且不开启呼吸灯,亮度拉满
